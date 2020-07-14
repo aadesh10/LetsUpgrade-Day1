@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <body>
+            <script type="text/javascript">
+
+//var
+{
+  var a=5;
+  console.log(a);
+} 
+{
+  a--;  
+  console.log(a);
+} 
+/* Since we are using "var a=5", scope of "a" is limited to the function within which it is defined.
+In this case it is within the global function scope */.
+
+//let
+{
+ let a=05;
+ console.log(a);
+}
+{
+  a--;
+  console.log(a);
+} 
+/* Since we are using "let a=05",scope of "a" is limited and "a" is not recognized */
+//const
+{
+ const Pi=3.14;
+ console.log(Pi);
+} 
+{
+  console.log(Pi);
+}
+/* Since we are using "const PI=3.14", scope of "PI" is limited and "PI" is not recognized*/
+/* difference between var,let and const
+1.Var
+The scope of a variable defined with the keyword var is limited to the function within which it is defined.
+If it is defined outside any function,the scope of the variable is global.
+
+2.Let
+The scope of a variable defined with the keyword let or const 
+is limited to the block defined by curly braces i.e.{}
+
+3.Const
+The scope of a variable defined with the keyword const is limited to the block defined by curly braces.
+however if a variable is defined with keyword const,it cannot be reassigned
+          
+          </script>
+
+        </body>
+    </head>
+</html>
+
+
