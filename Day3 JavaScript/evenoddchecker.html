@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even Odd checker</title>
+        
+    
+        <script>
+            function F1(){
+              
+                var num = document.getElementById('num').value;
+ 
+              
+                console.log(num);
+                if ( num % 2 == 0)
+              
+ {
+                     document.getElementById('result').innerHTML = num + ' is an Even number';
+                }else{
+                    document.getElementById('result').innerHTML = num + ' is an Odd number';
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <h2>Even Odd checker box!!!(Value in log console)!!!!</h2>
+        <form method="post">
+            Enter a number:  <input type="number" id="num" name="num" min="0" /><input type="button" value="Find Odd or Even" onclick="F1()" name="find" />
+            <div style="margin-top: 10px;" id="result"></div>
+        </form>
+    </body>
+</html>
