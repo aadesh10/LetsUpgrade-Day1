@@ -1,0 +1,37 @@
+<!-- Question 2)Destructure the following object -->
+<!--
+const student = {
+	name : "Helsink" ,
+	age : 24 , 
+	projects : {
+		diceGame:"Two player dice game using JavaScript"
+	
+	}
+}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructure object  Code Runninng Console</title>
+</head>
+
+<body>
+<script>
+
+const student = {
+	name : "Helsink" ,
+	age : 24 , 
+	projects : {
+		diceGame:"Two player dice game using JavaScript"
+	
+	}
+}
+
+//destructur
+
+const { name  , age , projects} = student;
+console.log(name , age , projects)
+
+</script>
+</body>
+</html>
